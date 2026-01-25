@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Digital Premium - 25,000 Libros</title>
-    <link rel="icon" type="image/png" href="mibibliotecadigital.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 50; overflow-y: auto; }
         .modal.active { display: flex; align-items: center; justify-content: center; padding: 1rem; }
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s; }
-        .faq-answer.active { max-height: 300px; }
+        .faq-answer { 
+            display: none;
+            overflow: hidden; 
+        }
+        .faq-answer.active { 
+            display: block;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
